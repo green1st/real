@@ -1,7 +1,7 @@
 const { v4: uuidv4 } = require("uuid");
 const Database = require("../models/database");
-const BrowserService = require("../services/browserService");
-const AIService = require("../services/aiService");
+const BrowserService = require("../services/browserService_improved");
+const AIService = require("../services/aiService_improved");
 
 class TaskController {
   constructor() {
@@ -90,6 +90,7 @@ class TaskController {
       await this.db.addLog(taskId, "Starting task execution", "info");
 
       // Initialize browser service for this task (visible mode)
+      this.browserService.setAIService(this.aiService);
       await this.browserService.initBrowser({
         headless: false, // Changed to headless: false
         contextOptions: { viewport: { width: 1280, height: 720 } },
@@ -121,7 +122,7 @@ class TaskController {
 
         let stepError = null;
         try {
-          await this.browserService.executeStep(step, (message, level) => {
+          await this.browserService.executeStepWithAdaptation(step, (message, level) => {
             this.db.addLog(taskId, message, level);
           });
         } catch (error) {
@@ -135,21 +136,23 @@ class TaskController {
 
         // AI analyzes the result and provides next steps or an improved plan
         let newPlan = null;
-        if (step.action.toLowerCase() === 'fill_form' && stepError === null) {
+        if (stepError) {
+          // If there was an error, try to get an adaptive plan revision
+          newPlan = await this.aiService.adaptivePlanRevision(
+            currentPlan,
+            currentPageContent,
+            currentUrl,
+            currentStepIndex,
+            stepError.message
+          );
+        } else if (step.action.toLowerCase() === 'fill_form') {
           // If form was just filled and no immediate error, analyze submission result
           newPlan = await this.aiService.handleFormSubmissionResult(
             currentPlan,
             currentPageContent,
             currentUrl,
             previousUrl,
-            stepError?.message
-          );
-        } else {
-          // General plan improvement for other steps or if form submission had an error
-          newPlan = await this.aiService.improveExecutionPlan(
-            currentPlan,
-            currentPageContent,
-            stepError?.message
+            null // No error
           );
         }
 

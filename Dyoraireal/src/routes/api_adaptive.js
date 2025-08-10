@@ -1,4 +1,5 @@
 const express = require("express");
+const AdaptiveTaskController = require("../controllers/taskController_adaptive");
 const TaskController = require("../controllers/taskController");
 const SettingsController = require("../controllers/settingsController");
 const DataController = require("../controllers/dataController");
@@ -6,11 +7,30 @@ const DataController = require("../controllers/dataController");
 const router = express.Router();
 
 // Initialize controllers
-const taskController = new TaskController();
+const adaptiveTaskController = new AdaptiveTaskController();
+const taskController = new TaskController(); // Fallback untuk compatibility
 const settingsController = new SettingsController();
 const dataController = new DataController();
 
-// Task routes
+// Adaptive task routes
+router.post("/tasks/adaptive", async (req, res) => {
+  try {
+    const result = await adaptiveTaskController.executeTask(req.body);
+    res.json(result);
+  } catch (error) {
+    res.status(500).json({ 
+      success: false, 
+      error: error.message 
+    });
+  }
+});
+
+router.get("/tasks/adaptive/status", (req, res) => {
+  const status = adaptiveTaskController.getExecutionStatus();
+  res.json(status);
+});
+
+// Original task routes (for backward compatibility)
 router.post("/tasks", (req, res) => taskController.createTask(req, res));
 router.get("/tasks", (req, res) => taskController.getAllTasks(req, res));
 router.get("/tasks/:taskId", (req, res) => taskController.getTask(req, res));
@@ -30,12 +50,27 @@ router.get("/data/stats", (req, res) => dataController.getExportStats(req, res))
 router.get("/data/database-stats", (req, res) => dataController.getDatabaseStats(req, res));
 router.post("/data/cleanup", (req, res) => dataController.cleanupData(req, res));
 
+// Learning and adaptation routes
+router.get("/learning/stats", (req, res) => {
+  const stats = adaptiveTaskController.aiService.getLearningStats();
+  res.json(stats);
+});
+
+router.post("/learning/reset", (req, res) => {
+  // Reset learning data (jika diperlukan untuk testing)
+  adaptiveTaskController.aiService.actionHistory = [];
+  adaptiveTaskController.aiService.successPatterns.clear();
+  adaptiveTaskController.aiService.failurePatterns.clear();
+  res.json({ success: true, message: "Learning data reset" });
+});
+
 // Health check
 router.get("/health", (req, res) => {
   res.json({
     status: "ok",
     timestamp: new Date().toISOString(),
-    version: "1.0.0",
+    version: "2.0.0-adaptive",
+    adaptiveMode: true
   });
 });
 

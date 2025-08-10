@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
-const apiRoutes = require("./src/routes/api");
+const apiRoutes = require("./src/routes/api_adaptive");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -21,7 +21,12 @@ app.use("/api", apiRoutes);
 
 // Serve frontend
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "public", "enhanced-index.html"));
+});
+
+// Serve adaptive frontend
+app.get("/adaptive", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "adaptive-index.html"));
 });
 
 // Error handling middleware
@@ -36,8 +41,9 @@ app.use((req, res) => {
 });
 
 app.listen(port, "0.0.0.0", () => {
-  console.log(`AI Web Agent backend listening at http://localhost:${port}`);
+  console.log(`AI Web Agent (Adaptive) backend listening at http://localhost:${port}`);
   console.log(`Environment: ${process.env.NODE_ENV}`);
+  console.log(`Adaptive Mode: ENABLED`);
+  console.log(`Frontend: http://localhost:${port}/adaptive`);
 });
-
 

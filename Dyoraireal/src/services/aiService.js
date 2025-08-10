@@ -68,7 +68,8 @@ class AIService {
       "- XPath: '//button[text()=\"Sign In\"]', '//a[contains(., \"Learn More\")]'\n" +
       "- For 'fill_form', 'target' can be a general form selector like 'form' or 'form#registrationForm'.\n\n" +
       "If the command implies account registration, try to include common registration fields in the 'data' object for 'fill_form' action, even if not explicitly mentioned in the command, and suggest placeholders.\n" +
-      "For example, if command is \"Daftar akun baru di website example.com\", the plan might include a 'fill_form' step with data like { email: \"placeholder@example.com\", password: \"SecureP@ss123!\" }.\n";
+      "For example, if command is \"Daftar akun baru di website example.com\", the plan might include a 'fill_form' step with data like { email: \"placeholder@example.com\", password: \"SecureP@ss123!\" }.\n" +
+      "Crucially, if the command specifies a URL, the first step MUST be to navigate to that exact URL. Do NOT default to google.com unless explicitly instructed or no other URL is provided.";
 
       const result = await this.model.generateContent(prompt);
       const response = await result.response;
