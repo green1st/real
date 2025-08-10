@@ -1,0 +1,675 @@
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+Error initializing browser: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium-1181/chrome-linux/chrome
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+    at BrowserService.initBrowser (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/browserService.js:24:37)
+    at TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:93:33) {
+  name: 'Error'
+}
+Error executing task d9660772-6dcc-48b9-8381-f0004d629890: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium-1181/chrome-linux/chrome
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+    at BrowserService.initBrowser (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/browserService.js:24:37)
+    at TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:93:33) {
+  name: 'Error'
+}
+Error initializing browser: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /home/ubuntu/.cache/ms-playwright/chromium-1181/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-accelerated-2d-canvas --no-first-run --no-zygote --disable-gpu --disable-web-security --disable-features=VizDisplayCompositor --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-renderer-backgrounding --disable-field-trial-config --disable-back-forward-cache --disable-backgrounding-occluded-windows --disable-features=TranslateUI --disable-ipc-flooding-protection --no-default-browser-check --no-first-run --disable-default-apps --disable-popup-blocking --disable-prompt-on-repost --disable-hang-monitor --disable-sync --disable-web-resources --disable-client-side-phishing-detection --disable-component-update --disable-domain-reliability --user-data-dir=/tmp/playwright_chromiumdev_profile-LE1YCT --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=7133[22m
+[2m  - [pid=7133][err] [7133:7133:0810/051410.241455:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY[22m
+[2m  - [pid=7133][err] [7133:7133:0810/051410.241698:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.[22m
+
+    at BrowserService.initBrowser (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/browserService.js:24:37)
+    at TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:93:33)
+Error executing task 5ce402f9-5e6c-4e70-8fd5-9652621977cb: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /home/ubuntu/.cache/ms-playwright/chromium-1181/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-accelerated-2d-canvas --no-first-run --no-zygote --disable-gpu --disable-web-security --disable-features=VizDisplayCompositor --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-renderer-backgrounding --disable-field-trial-config --disable-back-forward-cache --disable-backgrounding-occluded-windows --disable-features=TranslateUI --disable-ipc-flooding-protection --no-default-browser-check --no-first-run --disable-default-apps --disable-popup-blocking --disable-prompt-on-repost --disable-hang-monitor --disable-sync --disable-web-resources --disable-client-side-phishing-detection --disable-component-update --disable-domain-reliability --user-data-dir=/tmp/playwright_chromiumdev_profile-LE1YCT --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=7133[22m
+[2m  - [pid=7133][err] [7133:7133:0810/051410.241455:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY[22m
+[2m  - [pid=7133][err] [7133:7133:0810/051410.241698:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.[22m
+
+    at BrowserService.initBrowser (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/browserService.js:24:37)
+    at TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:93:33)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 📡 observe env with Radar: https://dotenvx.com/radar
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+Error initializing browser: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /home/ubuntu/.cache/ms-playwright/chromium-1181/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-accelerated-2d-canvas --no-first-run --no-zygote --disable-gpu --disable-web-security --disable-features=VizDisplayCompositor --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-renderer-backgrounding --disable-field-trial-config --disable-back-forward-cache --disable-backgrounding-occluded-windows --disable-features=TranslateUI --disable-ipc-flooding-protection --no-default-browser-check --no-first-run --disable-default-apps --disable-popup-blocking --disable-prompt-on-repost --disable-hang-monitor --disable-sync --disable-web-resources --disable-client-side-phishing-detection --disable-component-update --disable-domain-reliability --user-data-dir=/tmp/playwright_chromiumdev_profile-6p8Ued --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=7355[22m
+[2m  - [pid=7355][err] [7355:7355:0810/051436.819757:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY[22m
+[2m  - [pid=7355][err] [7355:7355:0810/051436.819811:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.[22m
+
+    at BrowserService.initBrowser (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/browserService.js:24:37)
+    at TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:93:33)
+Error executing task c15a60e0-409b-4550-8d0b-0f29ee44d490: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /home/ubuntu/.cache/ms-playwright/chromium-1181/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-accelerated-2d-canvas --no-first-run --no-zygote --disable-gpu --disable-web-security --disable-features=VizDisplayCompositor --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-renderer-backgrounding --disable-field-trial-config --disable-back-forward-cache --disable-backgrounding-occluded-windows --disable-features=TranslateUI --disable-ipc-flooding-protection --no-default-browser-check --no-first-run --disable-default-apps --disable-popup-blocking --disable-prompt-on-repost --disable-hang-monitor --disable-sync --disable-web-resources --disable-client-side-phishing-detection --disable-component-update --disable-domain-reliability --user-data-dir=/tmp/playwright_chromiumdev_profile-6p8Ued --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=7355[22m
+[2m  - [pid=7355][err] [7355:7355:0810/051436.819757:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY[22m
+[2m  - [pid=7355][err] [7355:7355:0810/051436.819811:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.[22m
+
+    at BrowserService.initBrowser (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/browserService.js:24:37)
+    at TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:93:33)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+Error parsing improved plan: SyntaxError: Expected double-quoted property name in JSON at position 1516 (line 55 column 25)
+    at JSON.parse (<anonymous>)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:283:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Error parsing improved plan: SyntaxError: Expected ',' or '}' after property value in JSON at position 1539 (line 56 column 21)
+    at JSON.parse (<anonymous>)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:283:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  override existing env vars with { override: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  override existing env vars with { override: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+Failed to parse JSON even after extracting braces: SyntaxError: Expected ',' or '}' after property value in JSON at position 1589 (line 56 column 29)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:22:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:25:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces: SyntaxError: Expected ',' or '}' after property value in JSON at position 1343 (line 56 column 29)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:22:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:25:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces: SyntaxError: Expected double-quoted property name in JSON at position 2802 (line 99 column 26)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:22:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:25:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:150
+  async analyzePageForForm(pageContent, objective = \'Identify and understand form fields for registration or data input.\') {
+                                                    ^
+
+SyntaxError: Invalid or unexpected token
+    at wrapSafe (node:internal/modules/cjs/loader:1512:18)
+    at Module._compile (node:internal/modules/cjs/loader:1534:20)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:4:19)
+
+Node.js v22.13.0
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 📡 version env with Radar: https://dotenvx.com/radar
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+SyntaxError: Bad escaped character in JSON at position 151 (line 1 column 152)
+    at JSON.parse (<anonymous>)
+    at parse (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/types/json.js:77:19)
+    at /home/ubuntu/Dyoraireal/Dyoraireal/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:238:16)
+    at done (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:524:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  override existing env vars with { override: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+Error initializing browser: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /home/ubuntu/.cache/ms-playwright/chromium-1181/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-accelerated-2d-canvas --no-first-run --no-zygote --disable-gpu --disable-web-security --disable-features=VizDisplayCompositor --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-renderer-backgrounding --disable-field-trial-config --disable-back-forward-cache --disable-backgrounding-occluded-windows --disable-features=TranslateUI --disable-ipc-flooding-protection --no-default-browser-check --no-first-run --disable-default-apps --disable-popup-blocking --disable-prompt-on-repost --disable-hang-monitor --disable-sync --disable-web-resources --disable-client-side-phishing-detection --disable-component-update --disable-domain-reliability --user-data-dir=/tmp/playwright_chromiumdev_profile-4tvjgz --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=12080[22m
+[2m  - [pid=12080][err] [12080:12080:0810/060706.065578:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY[22m
+[2m  - [pid=12080][err] [12080:12080:0810/060706.065697:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.[22m
+
+    at BrowserService.initBrowser (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/browserService.js:24:37)
+    at TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:93:33)
+Error executing task 5b46f54f-f16f-4f9f-b79e-13796b8f2db2: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /home/ubuntu/.cache/ms-playwright/chromium-1181/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-accelerated-2d-canvas --no-first-run --no-zygote --disable-gpu --disable-web-security --disable-features=VizDisplayCompositor --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-renderer-backgrounding --disable-field-trial-config --disable-back-forward-cache --disable-backgrounding-occluded-windows --disable-features=TranslateUI --disable-ipc-flooding-protection --no-default-browser-check --no-first-run --disable-default-apps --disable-popup-blocking --disable-prompt-on-repost --disable-hang-monitor --disable-sync --disable-web-resources --disable-client-side-phishing-detection --disable-component-update --disable-domain-reliability --user-data-dir=/tmp/playwright_chromiumdev_profile-4tvjgz --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=12080[22m
+[2m  - [pid=12080][err] [12080:12080:0810/060706.065578:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY[22m
+[2m  - [pid=12080][err] [12080:12080:0810/060706.065697:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.[22m
+
+    at BrowserService.initBrowser (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/browserService.js:24:37)
+    at TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:93:33)
+[dotenv@17.2.1] injecting env (3) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+AI Web Agent backend listening at http://localhost:3000
+Environment: development
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Failed to parse JSON even after extracting braces and basic fixes: SyntaxError: Expected ',' or '}' after property value in JSON at position 67 (line 5 column 19)
+    at JSON.parse (<anonymous>)
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:27:23)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error parsing improved plan: Error: Malformed JSON response from AI
+    at AIService.parseGeminiResponse (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:30:17)
+    at AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:252:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21)
+Error improving execution plan: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-1.5-flash"},"quotaValue":"50"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"15s"}]
+    at handleResponseNotOk (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:247:22)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21) {
+  status: 429,
+  statusText: 'Too Many Requests',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
+      violations: [Array]
+    },
+    { '@type': 'type.googleapis.com/google.rpc.Help', links: [Array] },
+    {
+      '@type': 'type.googleapis.com/google.rpc.RetryInfo',
+      retryDelay: '15s'
+    }
+  ]
+}
+Error improving execution plan: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-1.5-flash"},"quotaValue":"50"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"15s"}]
+    at handleResponseNotOk (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:247:22)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21) {
+  status: 429,
+  statusText: 'Too Many Requests',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
+      violations: [Array]
+    },
+    { '@type': 'type.googleapis.com/google.rpc.Help', links: [Array] },
+    {
+      '@type': 'type.googleapis.com/google.rpc.RetryInfo',
+      retryDelay: '15s'
+    }
+  ]
+}
+Error improving execution plan: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-1.5-flash"},"quotaValue":"50"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"3s"}]
+    at handleResponseNotOk (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:247:22)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21) {
+  status: 429,
+  statusText: 'Too Many Requests',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
+      violations: [Array]
+    },
+    { '@type': 'type.googleapis.com/google.rpc.Help', links: [Array] },
+    {
+      '@type': 'type.googleapis.com/google.rpc.RetryInfo',
+      retryDelay: '3s'
+    }
+  ]
+}
+Error improving execution plan: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-1.5-flash"},"quotaValue":"50"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"3s"}]
+    at handleResponseNotOk (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:247:22)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21) {
+  status: 429,
+  statusText: 'Too Many Requests',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
+      violations: [Array]
+    },
+    { '@type': 'type.googleapis.com/google.rpc.Help', links: [Array] },
+    {
+      '@type': 'type.googleapis.com/google.rpc.RetryInfo',
+      retryDelay: '3s'
+    }
+  ]
+}
+Error creating execution plan: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-1.5-flash"},"quotaValue":"50"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"38s"}]
+    at handleResponseNotOk (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async AIService.createExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:73:22)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:115:21) {
+  status: 429,
+  statusText: 'Too Many Requests',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
+      violations: [Array]
+    },
+    { '@type': 'type.googleapis.com/google.rpc.Help', links: [Array] },
+    {
+      '@type': 'type.googleapis.com/google.rpc.RetryInfo',
+      retryDelay: '38s'
+    }
+  ]
+}
+Error improving execution plan: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-1.5-flash","location":"global"},"quotaValue":"50"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"36s"}]
+    at handleResponseNotOk (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async makeRequest (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/home/ubuntu/Dyoraireal/Dyoraireal/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async AIService.improveExecutionPlan (/home/ubuntu/Dyoraireal/Dyoraireal/src/services/aiService.js:247:22)
+    at async TaskController.executeTask (/home/ubuntu/Dyoraireal/Dyoraireal/src/controllers/taskController.js:149:21) {
+  status: 429,
+  statusText: 'Too Many Requests',
+  errorDetails: [
+    {
+      '@type': 'type.googleapis.com/google.rpc.QuotaFailure',
+      violations: [Array]
+    },
+    { '@type': 'type.googleapis.com/google.rpc.Help', links: [Array] },
+    {
+      '@type': 'type.googleapis.com/google.rpc.RetryInfo',
+      retryDelay: '36s'
+    }
+  ]
+}
